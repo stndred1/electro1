@@ -1,0 +1,17 @@
+import numpy as np
+import matplotlib as mp
+import math as m
+
+def eq():
+
+    x =  float(input("Ingrese valor de x "))
+    y =  float(input("Ingrese valor de y "))
+    Vo = int(input("Ingrese el potencial inicial "))
+    a =  float(input("Ingrese valor de a "))
+    b =  float(input("Ingrese valor de b "))
+ 
+    equa= (Vo*4/m.pi)*sum((m.sin(1*m.pi*x/b)*m.sinh(1*m.pi*y/b)/1*m.sinh(1*m.pi*a/b)),(m.sin(2*m.pi*x/b)*m.sinh(2*m.pi*y/b)/1*m.sinh(2*m.pi*a/b)))
+    print(equa)
+    
+    
+eq()
